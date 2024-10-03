@@ -355,9 +355,10 @@ def threadFunction(targetAddress, self_crawler:WebCrawler,self_targetList:list,s
         for single_url in _temp_list:
             if dork in single_url:
                 _print_count += 1
-                p_info("*"*20) 
-                p_info(f"Dork Eşleşmesi -> {single_url} | Kaynak URL: {targetAddress}")
-                p_info("*"*20)
+                p_info("="*20) 
+                p_info(f"Dork Eşleşmesi -> {single_url}"),
+                p_info(f"Kaynak URL     -> {targetAddress}")
+                p_info("="*20)
                 time.sleep(5)
     
     if _print_count < 1:
